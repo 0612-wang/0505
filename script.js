@@ -5,8 +5,8 @@ let context;
 
 async function loadModel() {
     try {
-        const modelURL = './0505/0505/0505/model.json';
-        const metadataURL = './0505/0505/0505/metadata.json';
+        const modelURL = './0505/0505/model.json';
+        const metadataURL = './0505/0505/metadata.json';
         
         console.log('Loading model from:', modelURL);
         model = await tmImage.load(modelURL, metadataURL);
