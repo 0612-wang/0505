@@ -8,17 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <h1>垃圾分類辨識</h1>
+        <header>
+            <h1>♻️ 垃圾分類辨識</h1>
+            <p>AI智能垃圾分類助手</p>
+        </header>
+        
         <div class="camera-section">
             <video id="video" autoplay playsinline></video>
             <canvas id="canvas" style="display:none;"></canvas>
         </div>
+        
         <div class="controls">
-            <button id="start-camera">開啟攝影機</button>
-            <button id="capture" disabled>拍照辨識</button>
+            <button id="start-camera" class="btn-primary">📷 開啟攝影機</button>
+            <button id="capture" class="btn-success" disabled>📸 拍照辨識</button>
         </div>
-        <div id="result" class="result"></div>
+        
+        <div id="result" class="result">
+            <p>準備就緒，請先開啟攝影機</p>
+        </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
     <script src="script.js"></script>
